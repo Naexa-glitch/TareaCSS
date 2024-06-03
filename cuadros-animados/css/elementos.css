@@ -1,0 +1,66 @@
+.box-1 {
+    background-color: #db5a3a;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid;
+    position: relative;
+    overflow: hidden;
+}
+
+.box-1:hover {
+    animation-name: expand;
+    animation-duration: 2s;
+}
+
+@keyframes expand {
+    from {
+        width: 5rem;
+    }
+
+    to{
+        width: 10rem;
+    }
+}
+
+.box-2 {
+    background-color: #8bd48b;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid;
+}
+
+.box-2:hover {
+    animation-name: move;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(70%);
+    }
+}
+
+
+.box-3 {
+    background-color: #9e63e2;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid;
+}
+
+.box-3:hover {
+    animation-name: color;
+    transition: color 2s ease-in-out;
+    animation-duration: 2s;
+}
+
+@keyframes color {
+    0% {background-color: #9e63e2;}
+    100% {background-color: aqua;}
+}
+
